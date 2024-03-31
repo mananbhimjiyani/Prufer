@@ -200,5 +200,7 @@ extract($_POST);
             $query1 = "INSERT INTO `answer`(`usn`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`) VALUES ('$usn','$temp1','$temp2','$temp3','$temp4','$temp5','$temp6')";
             mysqli_query($con,$query1);
             header('Location: ' . $_SERVER['HTTP_REFERER']);
+            $pythonScriptPath = "/Users/manan/Downloads/Paper-Evaluation-using-AI-ML/MachineLearning/evaluation.py";
+            exec("python $pythonScriptPath 3 5");
 
 ?>

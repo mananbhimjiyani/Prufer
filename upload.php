@@ -40,7 +40,6 @@ extract($_POST);
                         move_uploaded_file($file_tmp=$_FILES["textp"]["tmp_name"][$key],$target_dir."$newFileName");
                         $tempp=$target_dir.$newFileName;
                         $temp=$temp.$tempp.",";
-                        echo "$temp";
                     }
                     else
                     {
